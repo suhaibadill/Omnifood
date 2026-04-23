@@ -33,10 +33,11 @@ Paragraphs: 1.6
 #333;
 
 ---- 03 SHADOWS
-Default: 9px
+
 
 ---- 04 BORDER RADIUS
-
+Default: 9px
+Medium: 11px
 
 ---- 05 WHITE SPACE
 
@@ -162,4 +163,8 @@ body {
 
 .margen-right-sm {
   margin-right: 1.6em !important;
+}
+
+strong {
+  font-weight: 500;
 }
