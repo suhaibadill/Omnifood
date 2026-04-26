@@ -77,6 +77,17 @@ body {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+/* when it not the last child on the grid container */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -87,6 +98,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 .grid--center-v {
   align-items: center;
 }
