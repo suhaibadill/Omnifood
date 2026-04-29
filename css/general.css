@@ -28,7 +28,9 @@ Paragraphs: 1.6
 #fae5d3
 #e98b38
 
-- Shades (Darl): #cf711f
+- Shades (Darl): 
+#cf711f
+#45260a
 - Accents:
 - Gray: 
 #6f6f6f (lightest gray allowed on #fdf2e9)
@@ -143,6 +145,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -151,8 +154,12 @@ body {
   text-decoration: none;
   padding: 1.6rem 3.2rem;
   border-radius: 0.9rem;
-
   transition: all 0.3s;
+
+  /* Only for .btn it self */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -176,6 +183,18 @@ body {
 .btn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
 }
 
 .link:link,
@@ -213,6 +232,11 @@ body {
   height: 3rem;
   width: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
